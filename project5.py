@@ -24,3 +24,7 @@ if st.checkbox('Criar outro histograma (por odômetro)'):
 st.write("Gráfico de dispersão entre odômetro e preço")
 fig = px.scatter(df_car_data, x="odometer", y="price")
 st.plotly_chart(fig, use_container_width=True)
+
+build_histogram = st.checkbox('Criar um histograma')
+if build_histogram: # se a caixa de seleção for selecionada
+  st.write('Criando um histograma para a coluna odometer')
