@@ -1,6 +1,6 @@
 # project5
 # Análise de Anúncios de Veículos
-Este projeto é um aplicativo web interativo criado com Streamlit, Python e Plotly Experss para analisar dados de anúncios de veículos nos EUA.
+Este projeto é um aplicativo web interativo criado com Streamlit, Python e Plotly Express para analisar dados de anúncios de veículos nos EUA.
 Funcionalidades:
 - Histograma da quilometragem
 - Gráfico de dispersão: quilometragem vs preço
