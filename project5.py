@@ -13,17 +13,13 @@ fig.show() # exibindo
 fig = px.scatter(df_car_data, x="odometer", y="price") # criar um gráfico de dispersão por preco
 fig.show() # exibindo
 
-if st.button('Criar histograma'):
+if st.button('Criar histograma'): # ao clicar no botao
     st.write('Criando um histograma para o conjunto de dados de anúncios de vendas de carros')
-    fig = px.histogram(df_car_data, x="odometer")
-    st.plotly_chart(fig, use_container_width=True)
-
+fig = px.histogram(df_car_data, x="odometer")
+st.plotly_chart(fig, use_container_width=True)
 # Caixa de seleção para criar histograma
 if st.checkbox('Criar outro histograma (por odômetro)'):
     st.write('Criando um histograma para a coluna odometer')
-    fig = px.histogram(df_car_data, x="odometer")
-    st.plotly_chart(fig, use_container_width=True)
-
 # Gráfico de dispersão sempre exibido
 st.write("Gráfico de dispersão entre odômetro e preço")
 fig = px.scatter(df_car_data, x="odometer", y="price")
